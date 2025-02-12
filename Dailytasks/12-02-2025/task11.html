@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function convertTemperature() {
+    let celsius = parseInt(prompt("enter the celcius"));
+    let fahrenheit = (celsius * 9 / 5) + 32;
+    document.writeln(`${celsius}°C is ${fahrenheit}°F`+"<br>");
+    let fahrenheit2 =parseInt(prompt("enter the fahrenheit"));
+    let celsius2 = (fahrenheit2 - 32) * 5 / 9;
+    document.writeln(`${fahrenheit2}°F is ${celsius2}°C`);
+  }
+  convertTemperature();
+    </script>
+</body>
+</html>

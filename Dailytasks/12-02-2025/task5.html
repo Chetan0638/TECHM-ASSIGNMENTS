@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    
+    function Stringrotation() {
+      let string = "digiterati";
+      document.writeln("Original string: " + string);
+      let length = string.length;
+      for (let i = 0; i < length; i++) {
+        let lastChar = string.slice(-1);
+        let restOfString = string.slice(0, -1);
+        string = lastChar + restOfString;
+        document.writeln("<br>")
+        document.writeln(`Rotated string: ${string}`+ "<br>");
+       
+      }
+    }
+    Stringrotation();
+  </script>
+</body>
+</html>

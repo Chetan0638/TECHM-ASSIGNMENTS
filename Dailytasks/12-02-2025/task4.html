@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of triangle</title>
+</head>
+<body>
+    <script>
+        function areaofTriangle(){
+            var a=parseInt(prompt("enter 1st side of triangle"));
+            var b=parseInt(prompt("enter 2nd side of triangle"));
+            var c=parseInt(prompt("enter 3rd side of triangle"));
+            var s=(a+b+c)/2;
+            var area=Math.sqrt(s*(s-a)*(s-b)*(s-c));
+            document.writeln("Area of Triangle :" + area);
+         }
+         areaofTriangle();
+    </script>
+</body>
+</html>

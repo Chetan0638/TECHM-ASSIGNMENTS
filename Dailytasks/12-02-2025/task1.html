@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function CurrentDayAndTime() {
+            const today = new Date();
+            const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const day = days[today.getDay()];
+            const hours = today.getHours();
+            const minutes = today.getMinutes();
+            const seconds = today.getSeconds();
+            const ampm = hours >= 12 ? "PM" : "AM";
+            const formattedHours = hours % 12 === 0 ? 12 : hours % 12;
+          
+            console.log(`Today is : ${day}. Current time is : ${formattedHours} ${ampm} : ${minutes} : ${seconds}`);
+          }
+          
+          CurrentDayAndTime();
+          
+        
+    </script>
+</body>
+</html>

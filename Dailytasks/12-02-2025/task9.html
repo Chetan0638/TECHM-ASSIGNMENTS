@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function daysBeforeChristmas() {
+            let christmasDate = new Date('December 25, ' + new Date().getFullYear());
+            let currentDate = new Date();
+            let daysLeft = Math.floor((christmasDate - currentDate) / (1000 * 60 * 60 * 24));
+            if (daysLeft < 0) {
+              christmasDate = new Date('December 25, ' + (new Date().getFullYear() + 1));
+              daysLeft = Math.floor((christmasDate - currentDate) / (1000 * 60 * 60 * 24));
+            }
+            document.writeln(`There are ${daysLeft} days left before Christmas.`);
+          }
+          
+          daysBeforeChristmas();
+          
+    </script>
+</body>
+</html>

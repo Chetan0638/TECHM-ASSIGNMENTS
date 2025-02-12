@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    function guessanumber(){
+      let n=parseInt(prompt("Guess a number between 1 to 10"));
+      if (n==Math.floor(Math.random() * 10) + 1){
+        alert("You won!");
+        document.write('<img align="center" width="300" height="300" src="https://cdn1.vectorstock.com/i/1000x1000/70/30/you-won-vector-37707030.jpg">');
+      } else{
+        alert("You lost!");
+        document.write('<img align="center" width="300" height="300" src="https://th.bing.com/th/id/OIP.MfHAlyiUS37OEbX1Wdv5QAHaEK?w=314&h=180&c=7&r=0&o=5&pid=1.7">');
+      }
+    }
+    guessanumber();
+  </script>
+</body>
+</html>
